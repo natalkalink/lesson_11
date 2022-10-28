@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body{
+   font-family:"Roboto Mono";
+   font-weight: 400;
+   line-height: 30px;
+}
+[class*="__container"] {
+   max-width: 1920px;
+   margin: 0px auto;
+}
+.wrapper {
+   position: relative;
+   overflow: hidden;
+   min-height: 100%;
+}
+.header {
+   position: fixed;
+   width: 100%;
+   left: 0;
+   top: 0;
+   background-color: rgb(242, 198, 115);
+   z-index: 100;
+   min-height: 60px; 
+}
+.menu {
+   text-align: left;
+   text-transform: uppercase;
+}
+.menu__item {
+   display: inline-block;
+	position: relative;
+}
+.menu__item:not(:last-child){
+	margin-right: 30px;
+}
+.menu__item:hover .sub-menu{
+   visibility: visible;
+   opacity: 0.6;
+   top: 100%;
+}
+.menu__link {
+   color: antiquewhite;
+   display: inline-block;
+   padding: 15px 0px;
+   font-size: 36px;
+   font-weight: 700;
+}
+.sub-menu {
+   background-color: #f3d3c1;
+   padding: 15px;
+   position: absolute;
+   top: 130%;
+   left: 0;
+   min-width: 110px;
+   border-radius: 10px;
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.4s ease 0s;
+}
+.sub-menu__link {
+   font-size: 16px;
+   color: #d20e0e;
+   position: relative;
+}
+.sub-menu__link::after{
+   content: "";
+   display: inline-block;
+   height: 5px;
+   width: 100%;
+   background-color:#d4151bbb;
+   position: absolute;
+   top: 25px;
+   left: 0px;
+}
+.position {
+   background-color: rgb(241, 237, 236);
+   margin: 30px;
+}
+.title{
+   font-weight: 400;
+   font-size: 50px;
+   text-transform: uppercase;
+   text-align: center;
+   color: #d20e0e;
+   padding: 30px;
+}
+.position__container {
+   padding : 100px ;
+}
+.position__relativ {
+   padding: 50px 0;
+   margin-bottom: 80px;
+   background-color: rgb(162, 185, 237);
+   border-radius: 30px;
+   padding: 50px 0;
+}
+.relativ-item {
+   position: relative;
+   text-transform: uppercase;
+   padding: 20px;
+   font-size: 20px;
+   line-height: 24px;
+   color: #19191b;
+   text-align: center;
+}
+.relativ-item--box1{
+   background-color: rgb(243, 80, 80);
+   left: 30px;
+   border-radius: 20px;
+}
+.relativ-item--box2{
+   background-color: rgb(243, 243, 78);
+   right: 60px;
+   border-bottom: 40px;
+   border-radius: 20px;
+   z-index: 1;
+}
+.relativ-item--box3{
+   background-color: rgb(36, 239, 239);
+   top: 20px;
+   left: 60px;
+   border-radius: 20px;
+}
+.position__absolute{
+   padding: 50px 0;
+   margin-bottom: 80px;
+   background-color: rgb(162, 185, 237);
+   border-radius: 30px;
+   padding: 50px 0;
+} 
+.absolute-item {
+   position: relative;
+   text-transform: uppercase;
+   padding: 20px;
+   font-size: 20px;
+   line-height: 24px;
+   color: #1E212C;
+   text-align: center;
+}
+.absolute-item--box1{
+   background-color: rgb(243, 80, 80);
+   border-radius: 20px;
+   position: absolute;
+   right: 30px;
+   width: 50%;
+   padding:10px;
+}
+.absolute-item--box2{
+   background-color: rgb(243, 243, 78);
+   border-radius: 20px;
+   left: 90px;
+   top: 35px;
+}
+.absolute-item--box3{
+   background-color: rgb(36, 239, 239);
+   border-radius: 20px;
+   right: 80px;
+   top: 30px;
+}
+.position__fixed{
+   padding: 50px 0;
+   margin-bottom: 80px;
+   background-color: rgb(162, 185, 237);
+   border-radius: 30px;
+   padding: 50px 0; 
+}
+.fixed-item{
+   position: relative;
+   text-transform: uppercase;
+   padding: 20px;
+   font-size: 20px;
+   line-height: 24px;
+   color: #19191b;
+   text-align: center;  
+}
+.fixed-item--box1{
+   background-color: rgb(243, 80, 80);
+   border-radius: 20px;
+   position: fixed;
+   left: 100px;
+   top: 30%;
+}
+.fixed-item--box2{
+   background-color: rgb(243, 243, 78);
+   border-radius: 20px; 
+   right: 100px;
+   top: 55px;
+}
+.fixed-item--box3{
+   background-color: rgb(36, 239, 239);
+   border-radius: 20px; 
+   left: 90px;
+   top: 40px;
+}
+.position__sticky{
+   padding: 50px 0;
+   margin-bottom: 80px;
+   background-color: rgb(162, 185, 237);
+   border-radius: 20px;
+   padding: 50px 0;   
+}
+.sticky-item{
+   position: relative;
+   text-transform: uppercase;
+   padding: 20px;
+   font-size: 20px;
+   line-height: 24px;
+   color: #232325;
+   text-align: center;  
+}
+.sticky-item--box1{
+   background-color: rgb(243, 80, 80);
+   border-radius: 20px; 
+   z-index: 1;
+}
+.sticky-item--box2{
+   background-color: rgb(243, 243, 78);
+   border-radius: 20px; 
+}
+.sticky-item--box3{
+   background-color: rgb(36, 239, 239);
+   border-radius: 20px; 
+}
+.car {
+   background-image: url("../img/autumn.jpg");
+   max-width: 100%;
+   height: 880px;
+   position: relative;
+   overflow: hidden;
+   margin-bottom: 30px;
+}
+.car__container {
+   width: 400px;
+   height: 400px;
+}
+.car__top {
+   background-color: green ;
+   width: 240px;
+   height: 80px;
+   position: absolute;
+   top: 700px;
+   left: 950px;
+   border-radius: 310px 150px 0 0;
+}
+.car__main {
+   background-color: green ;
+   width: 300px;
+   height: 70px;
+   position: absolute;
+   top: 780px;
+   left: 900px;
+   border-radius: 40px 10px 10px 10px;
+}
+.car__main::before {
+   content: "";
+   background-color: rgb(243, 198, 75);
+   width: 15px;
+   height: 20px;
+   display: inline-block;
+   position: absolute;
+   top: 10px;
+   border-radius: 200px 0 200px 0;
+}
+.car__main:hover::before{
+   box-shadow: -40px 0 30px 10px rgba(243, 224, 59, 0.575);
+}
+.car__girl{
+   width: 49px;
+   height: 55px;
+   background-image: url("../img/mary11.png");
+   position: absolute;
+   z-index: 1;
+   top: 715px;
+   left: 990px;
+}
+.car__window {
+   background-color: #f3d3c1;
+   width: 210px;
+   height: 60px;
+   position: absolute;
+   top: 710px;
+   left: 965px;
+   border-radius: 310px 150px 0 0;
+}
+.car__wheel-right {
+   background-color: rgb(56, 54, 54);
+   display: inline-block;
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+   border:solid;
+   position: absolute;
+   top: 810px;
+   left: 930px;
+}
+.car__wheel-left {
+   background-color: rgb(56, 54, 54);
+   display: inline-block;
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+   border:solid;
+   position: absolute;
+   top: 810px;
+   left: 1100px;
+}
